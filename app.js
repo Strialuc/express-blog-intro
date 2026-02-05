@@ -13,3 +13,8 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.send("<h1>Server del mio blog</h1>")
 })
+
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
