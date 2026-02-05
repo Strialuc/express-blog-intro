@@ -51,7 +51,10 @@ app.get('/bacheca', (req, res) => {
     ];
 
     // ritorniamo res con json array di oggetti posts
-    res.json(posts);
+    res.json({
+        total: posts.length,
+        posts: posts
+    });
 
 })
 
